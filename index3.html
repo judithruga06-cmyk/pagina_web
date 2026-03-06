@@ -1,0 +1,90 @@
+<! DOCTYPE HTML>
+<HTML lang=“es”>
+<HEAD>
+<TITLE> practica 3 </TITLE>
+    </HEAD>
+
+    <BODY>
+<font size=40 color=#87ceeb><B>APRENDEMOS DE ARTE</B></font><br>
+    <br>
+<font size=5 color=#000000>Ha día de hoy estamos rodeados de arte, sin darnos cuenta somos parte de la historia del arte y cada vez lo somos más gracias a nuestra forma de evolucionar y de crear.</font><br>
+<br>
+<font size=5 color=#000000>Antes de comenzar a hablar sobre el arte actual debemos de saber que es el arte: El arte es una forma de expresión humana creativa y consciente que utiliza recursos plásticos, lingüísticos, sonoros o corporales para interpretar la realidad o la imaginación. A través de obras estéticas, simbólicas o conceptuales, el arte transmite emociones, ideas y percepciones, sirviendo como un medio de comunicación, reflexión social y terapia.</font><br>
+<br>
+<font size=5 color=#000000>Una vez sabido la base del significado del arte, que artistas conocemos: Monet, Van gogh, Leonardo Da vinci, Joaquin Sorolla, Goya, Velazquez, etc... Aprendamos de estos artistas algo más.</font><br>
+<br>
+<font size=5 color=#87ceeb><B>Monet</B></font><font size=5 color=#000000>: Claude Monet fue un pintor francés, uno de los creadores del impresionismo. El término impresionismo deriva del título de su obra Impresión, sol naciente.Sus trabajos iniciales, realizados hasta mediados de la década de 1860, se inscriben dentro del realismo.</font><br>
+        <br>
+<img src="recursos3/monet.jpg" width=30%><br>
+        <br>
+<font size=5 color=#87ceeb><B>Van Gogh</B></font><font size=5 color=#000000>: Vincent Willem van Gogh fue un pintor neerlandés, uno de los principales exponentes del postimpresionismo.Pintó unos 800 cuadros y realizó más de 1600 dibujos.</font><br>
+<br>
+<img src="recursos3/vincent-van-gogh.jpg" width=30%><br>
+        <br>
+<font size=5 color=#87ceeb><B>Leonardo Da Vinci</B></font><font size=5 color=#000000>: Leonardo di ser Piero da Vinci,más conocido como Leonardo da Vinci, fue un polímata florentino del Renacimiento italiano. Fue a la vez pintor, anatomista, arquitecto, paleontólogo, botánico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista.</font><br>
+<br>
+<img src="recursos3/da%20vinci.jpg" width=30%><br>
+        <br>
+<font size=5 color=#87ceeb><B>Joaquin Sorolla</B></font><font size=5 color=#000000>: Joaquín Sorolla y Bastida fue un pintor español. Artista prolífico, dejó más de 2200 obras catalogadas. Su obra madura ha sido etiquetada como impresionista, postimpresionista y luminista.</font><br>
+        <br>
+<img src="recursos3/sorolla.jpg" width=30%><br>
+        <br>
+<font size=5 color=#87ceeb><B>Goya</B></font><font size=5 color=#000000>: Francisco José de Goya y Lucientes fue un pintor y grabador español. Su obra abarca la pintura de caballete y mural, el grabado y el dibujo.</font><br>
+<br>
+<img src="recursos3/goya.jpg" width=30%><br>
+        <br>
+<font size=5 color=#87ceeb><B>Velázquez</B></font><font size=5 color=#000000>: Diego Rodríguez de Silva y Velázquez, conocido como Diego Velázquez, fue un pintor barroco español considerado uno de los máximos exponentes de la pintura española y maestro de la pintura universal.</font><br>
+<br>
+<img src="recursos3/velazquez.jpg" width=30%><br>
+        <br><br>
+            
+
+<video src="recursos3/video_1.mp4" id=vi width="60%" autoplay="true" controls>
+    </video>
+            
+<br><br>
+<BUTTON onclick="Velocidad(0)" type="button">pausa</BUTTON>
+<BUTTON onclick="Velocidad(1)" type="button">play</BUTTON>
+<BUTTON onclick="Velocidad(0.5)" type="button">x 1/2</BUTTON>
+<BUTTON onclick="Velocidad(2)" type="button">x 2</BUTTON>
+<BUTTON onclick="Velocidad(4)" type="button">x 4</BUTTON>
+
+<BUTTON onclick="sonido_off()" type="button">sonido_off</BUTTON>
+<BUTTON onclick="sonido_on()" type="button">sonido_on</BUTTON>
+            
+<BUTTON onclick="pantalla()" type="button">pantalla completa</BUTTON>
+<br>
+<form action="" name="form_vel" ONSUBMIT="leer_vel(); return false"> 
+<input  TYPE="text" SIZE="4" VALUE="1" NAME="numero">
+<INPUT TYPE="submit" VALUE="velocidad">
+</form>
+<script>
+var video=document.getElementById("vi");
+
+function pantalla()
+        {
+        video.requestFullscreen();      
+         }
+function sonido_off()
+        {
+        video.muted=true;        
+         }
+ function sonido_on()
+        {
+        video.muted=false;        
+        }       
+
+function leer_vel()
+     {
+      var vi=form_vel.numero.value; 
+      Velocidad(Number(vi));
+     }
+function Velocidad(v)
+    {
+     video.playbackRate=v;
+    }
+</script>
+<br>
+<a href="index.html" target="_blank">APRENDEMOS JUNTOS SOBRE LOS ANIMALES</a>
+</BODY>
+</HTML> 

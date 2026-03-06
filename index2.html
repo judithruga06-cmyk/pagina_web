@@ -1,0 +1,124 @@
+<! DOCTYPE HTML>
+<HTML lang=“es”>
+<HEAD>
+<TITLE> practica 2 </TITLE>
+<META HTTP-EQUIV="Refresh" CONTENT="10">
+</HEAD>
+<BODY>
+    <font size=40 color=#ff8c00 face="garamond"><B> APRENDEMOS MATEMÁTICAS</B></font><br>
+    <font size=5 color=#000000>Vamos a aprender un poco más sobre la asignatura que nos enseñan a lo largo de nuestra vida pero que luego pensamos para que sirve realmente, estoy hablando de las matematicas, una asignatura que para muchos de nosotros fue una pesadilla, pero que cuando aprendiamos disfrutabamos de ella.</font><br>
+    <br><br>
+<TABLE width="500">
+<TR>
+<TD width="250" align="center"><img src="recursos2/images.jpg"></TD> <TD width="250" align="center" style= background-color:orange>Las matemáticas son una ciencia formal y deductiva que estudia las propiedades, relaciones y patrones entre entes abstractos como números, figuras geométricas, símbolos y estructuras.</TD>
+</TR>
+    </TABLE>
+<br><br> 
+<font size=5 color=#000000>Hay distintas ramas de las matemáticas, como son la suma y la resta que son aquellas operaciones más comúnes, por otro lado la multiplicación y la división, vamos a hacer una breve explicación y despues realizaremos unos cuantos problemas juntos.</font><br>
+    <br>
+<font size=5 color=#ff8c00><B>Sumas y restas</B></font><font size=5 color=#000000>: La suma y la resta son las operaciones aritméticas básicas: agrupa o añade cantidades para obtener un total, mientras que la resta  quita o diferencia una cantidad de otra. Se realizan alineando los números por valor posicional.</font><br>
+    <br>
+<font size=5 color=#ff8c00><B>Multiplicación y división</B></font><font size=5 color=#000000>: La multiplicación es una suma repetida que une grupos iguales para hallar un producto. La división es la operación inversa, buscando repartir en grupos iguales o encontrar un factor faltante. Ambas son operaciones fundamentales que se resuelven de izquierda a derecha.</font><br>
+    <br>
+<font size=5 color=#000000>Más allá de la suma, resta, multiplicación y división, existen operaciones matemáticas fundamentales y avanzadas necesarias para cálculos complejos, incluyendo potenciación, radicación y logaritmos, pero este apartado es algo más complicado, ya que subimos nuestro nivel pero debemos primero aprender lo basico y obtener una base de las matemáticas.</font><br>
+    <br>
+<font size=5 color=#000000>Siempre hemos pensado que las matemáticas no nos servirian de nada en la vida cuando fueramos más mayores, lo que no sabiamos es que nuestras madres tenian razón cuando nos decian que las matemáticas estaban en todos lados e incluso donde menos te esperas que esten, como por ejemplo en los supermercados, en la lengua e incluso en el arte.</font><br>
+    <br>
+<font size=5 color=#000000>El arte de las matemáticas radica en la belleza, elegancia y creatividad al descubrir estructuras, patrones y conexiones invisibles, transformando conceptos abstractos en formas, simetrías y proporciones tangibles. Esta disciplina une la lógica pura con la estética, usando geometría, fractales y algoritmos para crear arte visual, música y arquitectura.</font><br>
+    <br>
+<img src="recursos2/imagen-1.jpg" size=20><img src="recursos2/matematicas-diseno-5.webp"><br>
+    <br>
+<font size=5 color=#000000>Una vez ya explicada las bases de las matemáticas tanto las lecciones como en la vida o el arte, vamos a poner aprueba tus conceptos. Resuelveme estas operaciones.</font><br>
+    <br>
+<BODY>
+<button onclick="suma(3,4)" type="button"> 3 + 4 </button>
+    <script>
+    function suma(a,b)
+         {
+        sum=a+b
+     alert("muy bien "+sum);
+         }
+    </script>
+      <br><br>
+<button onclick="suma(8,6)" type="button"> 8 + 6 </button>
+    <script>
+    function suma(a,b)
+         {
+        sum=a+b
+     alert("muy bien "+sum);
+         }
+    </script>
+    <br><br>
+<button onclick="suma(20,36)" type="button"> 20 + 36 </button>
+    <script>
+    function suma(a,b)
+         {
+        sum=a+b
+     alert("muy bien "+sum);
+         }
+    </script>
+    <br><br>
+<button onclick="suma(47,26)" type="button"> 47 + 26 </button>
+    <script>
+    function suma(a,b)
+         {
+        sum=a+b
+     alert("muy bien "+sum);
+         }
+    </script>
+    <br><br>
+<button onclick="suma(138,57)" type="button"> 138 + 57 </button>
+    <script>
+    function suma(a,b)
+         {
+        sum=a+b
+     alert("muy bien "+sum);
+         }
+    </script>
+    <br><br>
+    <BUTTON onclick="mensaje()" type="button">Escribir mensaje</BUTTON>
+    <script>
+    function mensaje()
+        {
+        alert("Genial, lo has conseguido");    
+        }
+    </script>
+    <br><br>
+    <font size=5 color=#000000>Vamos a dejar aparte las operaciones y vamos a comprobar tu rapidez mental con multiplicaciones, aqui te dejo un ejercicio de de comida de gato, dependiendo de la cantidad de comida que metas en la cesta ¿cuánto te costara en total? Y tambien te dejo un ejercicio a tu gusto, coloca los numeros que quieras y antes de ver su resultado hazlos tú aparte.</font><br>
+<br><br>
+<form action="" name="loquesea" onsubmit="leer(); return true">
+    <input type="text" size=4 value=0 name="numero1">
+    <input type="text" size=4 value=0 name="numero2">
+    <input type="submit" value="sumar 2 números">
+    </form>
+    <br><br>
+<form action="" name="loquesea2" onsubmit="leer2(); return true">
+    <input type="text" size=4 value=0 name="numero1">
+    <input type="submit" value="sopa para gatos 2,3€ enviar a cesta">
+    </form>
+    
+<script>
+function leer()
+    {
+     sumar(loquesea.numero1.value, loquesea.numero2.value)  
+    }
+function sumar(p1,p2)
+    {
+     var resul=Number(p1)+Number(p2);
+        alert(resul);
+    }
+    
+function leer2()
+        {
+        compra(loquesea2.numero1.value);
+        }
+function compra(p1)
+        {
+        var resul=Number(p1)*2.3;
+        alert("coste:"+resul);
+        }
+</script>
+<br><br>
+<a href="index.html" target="_blank">APRENDEMOS JUNTOS SOBRE LOS ANIMALES</a>
+    </BODY>
+</HTML> 
